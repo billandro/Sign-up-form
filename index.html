@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="icon-holder">
+            <div class="icon">
+                <img src="img/odin-lined.png" alt="The Odin Project logo">ODIN
+            </div>
+        </div>
+        <div class="credentials">
+            <p>Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="paragraphs">
+            <div class="firstp">
+                This is not a real online service! You know
+                you need something like this in your life to
+                help you realize your deepest dreams. Sign
+                up <em>now</em> to get started.
+            </div>
+            <div class="secondp">You <em>know</em> you want to.</div>
+        </div>
+    
+        <form id="my-form">
+            <div class="heading">Let's do this!</div>
+    
+            <div class="names">
+                <div class="left">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname" name="user_name" class="fname" required>
+                </div>
+                <div class="right">
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname" name="user_surname" required>
+                </div>
+            </div>
+    
+            <div class="contact-details">
+                <div class="left">
+                    <label for="mail">EMAIL</label>
+                    <input type="email" id="mail" name="user_address" placeholder="johnwick@gmail.com">
+                </div>
+                <div class="right">
+                    <label for="number">PHONE NUMBER</label>
+                    <input type="tel" id="number" name="user_number" maxlength="10">
+                </div>
+            </div>
+    
+            <div class="passwords">
+                <div class="left"> 
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" minlength="6" class="error" required onkeyup="passwordCheck()">
+                </div>
+                <div class="right3">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" minlength="6" class="error" required onkeyup="passwordCheck()">
+                    <span class="error-message"></span>
+                </div>
+            </div>
+        </form>
+    
+        <div class="submit">
+            <button type="submit" id="submit-button" form="my-form">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+
+    <script src="js/javascript.js"></script>
+</body>
+</html>

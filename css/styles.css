@@ -1,0 +1,187 @@
+@font-face {
+    font-family: norseBold;
+    src: url(../font/norse-bold-webfont.woff2) format('woff2'),
+         url(../font/norse-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background-image: url(../img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: 100%;
+}
+
+.icon-holder {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 150px;
+    padding: 10px 0;
+}
+
+.icon {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0px auto;
+    width: fit-content;
+    font-size: 70px;
+    font-family: norseBold, sans-serif;
+}
+
+.icon > img {
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.credentials {
+    margin: auto auto 0 auto;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+}
+
+.paragraphs {
+    background-color: #f9fafb;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 55px 30px 0px 40px;
+    box-shadow: 0px -8px 5px -4px rgba(0,0,0,0.15) inset;
+}
+
+.firstp {
+    width: 83%;
+    margin-bottom: 20px;
+}
+
+.secondp {
+    margin-bottom: 30px;
+}
+
+form {
+
+    padding: 15px 0px 20px 40px;
+}
+
+.names,
+.contact-details,
+.passwords {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.left {
+    margin-right: 70px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+input {
+    appearance: none;
+    outline: none;
+    width: 225px;
+    padding: 0px 10px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    height: 32px;
+    font-size: 15px;
+    margin-bottom: 5px;
+
+    &:focus {
+        box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.25);
+        border-color: #4a6ed6;
+        background-color: whie;
+    }
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.submit {
+    background-color: #f9fafb;
+    padding-left: 40px;
+    padding-top: 30px;
+    height: 100%;
+    box-shadow: -1px 8px 5px -4px rgba(0,0,0,0.15) inset;
+}
+
+.submit a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.submit p {
+    margin-top: 15px;
+}
+
+button {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #596D48;
+    padding: 15px 50px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.25);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+.right3 {
+    position: relative;
+}
+
+span {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    width: 110px;
+    height: fit-content;
+    top: 50px;
+    right: 110px;
+}
